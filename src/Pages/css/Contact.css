@@ -1,0 +1,120 @@
+.contact {
+  text-align: center;
+  align-items: center;
+  width: 100%;
+  max-width: 100%;
+  min-height: 100%;
+  display: flex;
+  min-height: 100vh;
+  justify-content: space-around;
+  overflow: hidden;
+  flex-wrap: wrap;
+  background-color: #d8d3cd;
+}
+
+#content {
+  text-align: left;
+  min-width: 300px;
+  float: left;
+  align-content: center;
+
+  border-radius: 50%;
+  padding: 50px;
+}
+#content h1 {
+  font-size: xxx-large;
+  margin: 0;
+  color: rgb(79, 79, 79);
+  text-align: center;
+}
+
+.contact-link {
+  color: var(--mainColor);
+  text-decoration: none;
+}
+
+.contact-link:hover {
+  color: var(--contrast);
+}
+
+.contact p {
+  font-size: 18px;
+}
+
+.mydetails {
+  margin-top: 20px;
+  color: rgb(67, 67, 67);
+  margin-left: 10px;
+  font-size: calc(15px + 0.1vw);
+  text-align: center;
+}
+.mydetails img{
+  width: calc(25px + 0.1vw);
+  height: calc(25px + 0.1vw);
+  margin: 0 20px;
+  
+}
+.formdiv {
+  width: fit-content;
+  min-width: 400px;
+  border-radius: 10px;
+  max-width: 90vw;
+  overflow: hidden;
+}
+form input,
+textarea {
+  margin: 10px;
+  padding-bottom: 10px;
+  border: none;
+  border-bottom: 2px solid black;
+  width: 20vw;
+  min-width: 250px;
+  font-size: 15px;
+  background-color: transparent !important;
+}
+
+form input:focus {
+  outline: none;
+  border-bottom: 2px solid var(--font);
+}
+
+form h2 {
+  color: var(--mainColor);
+  align-self: flex-start;
+}
+#submitbutton {
+  padding: 7px 12px;
+  height: 40px;
+  border: 0;
+  border-radius: 20px;
+  background-color: #de866e;
+  font-size: 14px;
+  margin: auto;
+  letter-spacing: 1px;
+  cursor: pointer;
+  margin-top: 20px;
+  position: relative;
+  width: 20vw;
+  min-width: 250px;
+  font-weight: 800;
+}
+#message {
+  height: 80px;
+  vertical-align: bottom;
+}
+
+@media screen and (max-width: 600px) {
+  form input,
+  textarea {
+    width: 60% !important;
+  }
+  .content {
+    font-size: 18px !important;
+  }
+  #submitbutton {
+    width: 65%;
+  }
+  #content h1 {
+    margin-top: 50px;
+  }
+}

@@ -4,9 +4,10 @@ nav {
   background-color: var(--background);
   display: flex;
   position: fixed;
+  justify-content: space-between;
   z-index: 10;
   transition: 0.2s;
-  font-size: calc(15px + 0.5vmin);
+  font-size: calc(10px + 0.5vmin);
   top: 0px;
   left: 0px;
   right: 0px;
@@ -21,11 +22,11 @@ nav {
 .nav-links {
   display: flex;
   list-style: none;
-  width: 100vw;
+  width: 25vw;
   padding: 0 0.7vw;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
-  text-transform: uppercase;
+  margin-right: 10%;
 }
 .nav-links li a {
   text-decoration: none;
@@ -61,7 +62,7 @@ nav {
 .hamburger {
   display: none;
 }
-.navLogo{
+.navLogo {
   display: flex;
   align-items: center;
   height: 100%;
@@ -130,4 +131,8 @@ nav {
 }
 .toggle .line3 {
   transform: rotate(45deg) translate(-5px, -6px);
+}
+
+.active::after {
+  width: 70% !important;
 }

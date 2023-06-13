@@ -1,7 +1,7 @@
-import "./css/Navbar.css";
+import "../css/Navbar.css";
 import { useState } from "react";
-import logo from "./Files/LOGO_dark.png";
-import { Link } from "react-router-dom";
+import logo from "../Files/LOGO_dark.png";
+import { NavLink } from "react-router-dom";
 function Navbar() {
   const [open, setOpen] = useState(false);
 
@@ -29,19 +29,25 @@ function Navbar() {
         <div className="line3"></div>
       </div>
       <div className="navLogo">
-        <Link to="/">
+        <NavLink to="/">
           <img src={logo} alt="LOGO" id="logo" />
-        </Link>
+        </NavLink>
       </div>
       <ul className={navLinks}>
         <li className={link} onClick={handleClick}>
-          <Link to="/" >Home</Link>
+          <NavLink exact="true" activeclassname="active" to="/">
+            Home
+          </NavLink>
         </li>
         <li className={link} onClick={handleClick}>
-          <a href="#about" >About</a>
+          <NavLink activeclassname="active" to="/about">
+            About
+          </NavLink>
         </li>
         <li className={link} onClick={handleClick}>
-          <a href="#contact">Contact</a>
+          <NavLink activeclassname="active" to="/contact">
+            Contact
+          </NavLink>
         </li>
       </ul>
     </nav>
