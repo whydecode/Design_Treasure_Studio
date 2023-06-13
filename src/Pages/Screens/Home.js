@@ -53,13 +53,13 @@ function Home() {
             <img src={image1} alt="" className="parallax-image" />
           </Parallax>
           <Parallax
-            speed={isMobile ? 3 : 10}
+            speed={isMobile ? 4 : 10}
             className="parallex-div"
             style={{ textAlign: "end" }}
           >
             <img src={image2} alt="" className="parallax-image" />
           </Parallax>
-          <Parallax speed={isMobile ? -3 : -10} className="parallex-div">
+          <Parallax speed={isMobile ? 8 : -10} className="parallex-div">
             <img src={image3} alt="" className="parallax-image" />
           </Parallax>
         </ParallaxProvider>
