@@ -1,0 +1,33 @@
+.footer{
+    width: 100%;
+    bottom: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border-top: 1px solid #d5d5d5;
+}
+.copyright{
+    font-family: "times", sans-serif;
+    font-size: calc(11px + 0.5vmin);
+    color: #929292;
+    margin: 2% 0;
+}
+.follow{
+    margin: 2% 0;
+    font-size: calc(12px + 0.5vmin);
+    color: #929292;
+}
+.follow > strong > a{
+    color: #373737;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 600px) {
+    .copyright{
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+    .follow{
+        margin-bottom: 5%;
+    }
+}

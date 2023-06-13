@@ -42,6 +42,7 @@ const About = () => {
           <a
             href="https://www.instagram.com/designtreasure_studio"
             target="_blank"
+            rel="noreferrer"
           >
             Instagram
           </a>

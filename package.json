@@ -16,6 +16,7 @@
     "react-loading-skeleton": "^3.1.0",
     "react-router-dom": "^6.11.2",
     "react-scripts": "5.0.1",
+    "react-scroll-parallax": "^3.4.2",
     "react-simple-image-slider": "^2.4.1",
     "web-vitals": "^2.1.4"
   },

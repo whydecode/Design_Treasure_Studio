@@ -1,5 +1,5 @@
 nav {
-  height: 5.5rem;
+  height: 6.5rem;
   width: 100%;
   background-color: var(--background);
   display: flex;
@@ -13,7 +13,7 @@ nav {
   right: 0px;
 }
 .colorChange {
-  height: 4rem;
+  height: 5.5rem;
   border: none;
   box-shadow: 0 2px 5px rgba(255, 255, 255, 0.2);
 }
@@ -22,7 +22,7 @@ nav {
 .nav-links {
   display: flex;
   list-style: none;
-  width: 25vw;
+  width: 20vw;
   padding: 0 0.7vw;
   justify-content: space-around;
   align-items: center;
@@ -66,11 +66,11 @@ nav {
   display: flex;
   align-items: center;
   height: 100%;
-  margin-left: 5%;
+  margin-left: 10%;
 }
 #logo {
-  width: 4rem;
-  height: 4rem;
+  width: 5rem;
+  height: 5rem;
 }
 
 /*Stying for small screens*/
@@ -97,7 +97,7 @@ nav {
     flex-direction: column;
     clip-path: circle(50px at 90% -20%);
     -webkit-clip-path: circle(50px at 90% -10%);
-    transition: all 0.8s ease-out;
+    transition: all 0.6s ease-out;
     pointer-events: none;
   }
   .nav-links.open {
@@ -119,6 +119,9 @@ nav {
   }
   li.fade {
     opacity: 1;
+  }
+  .nav-links li a {
+    font-size: 1rem;
   }
 }
 /*Animating Hamburger Icon on Click*/
