@@ -1,21 +1,22 @@
 nav {
   height: 6.5rem;
   width: 100%;
-  background-color: var(--background);
   display: flex;
-  position: fixed;
+
   justify-content: space-between;
   z-index: 10;
   transition: 0.2s;
-  font-size: calc(10px + 0.5vmin);
+  font-size: calc(11px + 0.5vmin);
   top: 0px;
   left: 0px;
   right: 0px;
+  background-color: white;
 }
 .colorChange {
   height: 5.5rem;
   border: none;
   box-shadow: 0 2px 5px rgba(255, 255, 255, 0.2);
+  background-color: #fcf8f0;
 }
 
 /*Styling Links*/
@@ -121,7 +122,7 @@ nav {
     opacity: 1;
   }
   .nav-links li a {
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
 }
 /*Animating Hamburger Icon on Click*/

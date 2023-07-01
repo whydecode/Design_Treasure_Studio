@@ -5,10 +5,9 @@ import {
   ParallaxBannerLayer,
   ParallaxProvider,
 } from "react-scroll-parallax";
-import image1 from "../Files/image1.png";
-import image2 from "../Files/image2.jpg";
-import image3 from "../Files/image3.png";
-import homeImg from "../Files/homeImg.png";
+import puja from "../Files/Puja.png";
+import living from "../Files/Living.jpg";
+// import homeImg from "../Files/homeImg.png";
 import { useEffect, useState } from "react";
 function Home() {
   const [isMobile, setIsMobile] = useState(false);
@@ -38,7 +37,7 @@ function Home() {
         </div> */}
         <ParallaxProvider>
           <ParallaxBanner style={{ aspectRatio: "2 / 1" }}>
-            <ParallaxBannerLayer image={homeImg} />
+            <ParallaxBannerLayer image={living} speed={isMobile ? 0 : 5} />
             <ParallaxBannerLayer speed={isMobile ? 0 : -10}>
               <h1>Designing spaces</h1>
               <h1>that Inspire and Delight</h1>
@@ -47,22 +46,31 @@ function Home() {
         </ParallaxProvider>
       </div>
 
-      <div className="parallaxImages">
-        <ParallaxProvider>
-          <Parallax speed={isMobile ? -2 : -5} className="parallex-div">
-            <img src={image1} alt="" className="parallax-image" />
-          </Parallax>
-          <Parallax
-            speed={isMobile ? 4 : 10}
-            className="parallex-div"
-            style={{ textAlign: "end" }}
-          >
-            <img src={image2} alt="" className="parallax-image" />
-          </Parallax>
-          <Parallax speed={isMobile ? 8 : -10} className="parallex-div">
-            <img src={image3} alt="" className="parallax-image" />
-          </Parallax>
-        </ParallaxProvider>
+      <div className="services">
+        <div className="services-content">
+          <h2>Our Services</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit porro
+            dolore quae aut, quaerat distinctio animi sequi vel, consequatur
+            harum similique. Labore tempore dolorum laudantium, libero id vitae
+            reprehenderit dolor! Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Iusto eos quibusdam excepturi aperiam at odit
+            nihil harum exercitationem quas rem? Mollitia error ipsa id labore
+            dolore quia recusandae quos provident?
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
+            soluta est minima, corrupti esse eligendi, laboriosam hic, minus
+            temporibus expedita ab assumenda unde nihil architecto provident
+            reiciendis ut atque nemo!
+          </p>
+        </div>
+        <img src={puja} alt="Interior" className="services-image" />
+      </div>
+      <div className="projects">
+        <div className="project"></div>
+        <div className="project"></div>
+        <div className="project"></div>
       </div>
     </div>
   );

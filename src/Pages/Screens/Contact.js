@@ -2,8 +2,8 @@ import React from "react";
 import "../css/Contact.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
-import facebook from "../Files/facebook.svg";
-import instagram from "../Files/instagram.svg";
+import facebook from "../Files/facebook.png";
+import instagram from "../Files/instagram.png";
 
 const Contact = () => {
   const handleSubmit = () => {};
@@ -31,13 +31,10 @@ const Contact = () => {
           </a>
         </div>
         <div className="mydetails">
-          <a
-            href="mailto:designtreasurestudio@gmail.com"
-            className="contact-link"
-          >
-            {/* <FontAwesomeIcon icon={faInstagram} />
-            <FontAwesomeIcon icon={faFacebook} /> */}
+          <a className="contact-link">
             <img src={facebook} alt="" />
+          </a>
+          <a href="" className="contact-link">
             <img src={instagram} alt="" />
           </a>
         </div>

@@ -9,10 +9,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  /* background-color: rgb(41, 41, 41); */
-  background: linear-gradient(to right, #313131 1px, transparent 1px) 0 0,
-    /* Add more linear gradients as needed */ #262626; /* Background color fallback */
-  background-size: 15% 100%; /* Adjust the size of the lines */
+  background-color: #DAD0C2;
 
   animation: easeout 0.5s ease 3.5s;
 }
@@ -43,7 +40,7 @@
   max-width: 400px;
   max-height: 400px;
   animation: logoIn 0.2s ease-in;
-  background-color: #262626;
+
   border-radius: 50%;
 }
 @keyframes logoIn {

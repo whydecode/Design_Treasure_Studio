@@ -2,16 +2,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poiret+One&display=swap");
 :root {
-  --background: #ffffff;
+  --background: #f7f2e7;
   --font: #000000;
 }
 
 .Home {
-  margin-top: 5rem;
   text-align: center;
   background-color: var(--background);
   max-width: 100%;
   overflow: hidden;
+  margin-bottom: 5%;
 }
 
 @keyframes homeAnimation {
@@ -64,31 +64,37 @@
 .Home > div > div > h1:nth-child(2) {
   margin-bottom: 15%;
 }
-.firstContent {
-  max-width: 500px;
-  font-family: "Space Grotesk", sans-serif;
-}
-.secondContent {
-  max-width: 500px;
-  font-family: "Space Grotesk", sans-serif;
-}
 
-.parallaxImages {
-  margin-top: 10%;
+.services {
   display: flex;
-  flex-wrap: wrap;
-  margin-bottom: 10%;
+  align-items: center;
+  margin: 5% 0;
 }
 
-.parallax-image {
-  width: 45%;
+.services-image {
+  width: 40%;
+  /* filter: grayscale(100%);
+  transition: filter 0.3s ease-in-out; */
 }
-.parallex-div {
-  width: 100%;
-  margin: 0 5%;
+
+
+.services-content{
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin: auto;
+  color: #797A7E;
+}
+.services-content > h2{
+  font-family: "Space Grotesk", sans-serif;
+  font-size: calc(8px + 2vw);
+  margin: 0 0 5% 0;
+  font-weight: 400;
 }
 @media screen and (max-width: 600px) {
-  .Home > div  {
+  .Home > div {
     height: 35vh;
   }
   .Home > div > div > h1:nth-child(2) {
